@@ -1,0 +1,10 @@
+<html>
+<head>
+  <title>
+    画像テスト
+  </title>
+</head>
+  <body>
+    <img src="./
+  </body>
+</html>
