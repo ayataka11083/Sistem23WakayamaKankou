@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+ <head>
+  <title>
+   <div style="background-color : #AAEEDD">和歌山観光案内</div>
+   </title>
+ </head>
+
+ <body>
+  <div style="background-color : #AAEEDD"><font size="10">和歌山観光案内</font></div>
+
+    <div style="margin-top : 10px;background-color : #AAEEDD"><font size="5">現在地付近の観光地</font></div>
+　<img src="img1.jpg" alt="山の写真" />
+  <img src=”/PC/デスクトップ/システム設計/image/img/観光地.jpg” alt="観光地の写真" />
+  
+  <div style="margin-top : 10px;background-color : #AAEEDD"><font size="5">人気の観光地</font></div>
+
+　<div style="margin-top : 10px;background-color : #AAEEDD"><font size="5">○○代におすすめ</font></div>
+ </body>
+
+</html>
