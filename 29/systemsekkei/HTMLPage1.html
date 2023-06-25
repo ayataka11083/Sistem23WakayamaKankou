@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>おすすめの予定表</title>
+</head>
+<body>
+<center><b><h1>おすすめの予定表</h1></b></center>
+<center>！あなたにあった旅の経路を作成！</center>
+
+<center><h2>行きたい観光地</h2></center>
+
+<center><table border="1" cellpadding="10"></center> <!--ここは観光場所入力するところ-->
+<tr>
+ <td><input type="text" id="1" size="50" value=""></td>
+</tr>
+<tr>
+ <td><input type="text" id="2" size="50" value=""></td>
+</tr>
+<tr>
+ <td><input type="text" id="3" size="50" value=""></td>
+</tr>
+<tr>
+ <td><input type="text" id="4" size="50" value=""></td>
+</tr>
+<tr>
+ <td><input type="text" id="5" size="50" value=""></td>
+</tr>
+</table>　　　　　　　　　　　　　　　　　　　　　　<!--ここまで観光場所入力-->
+
+
+<center>移動手段は？</center>
+<form name="howtogo">　　　　　　　　　　　　　　　　<!--ここは交通手段選択場所-->
+　<div class="radio-wrap">
+　　<input type="radio" name="test" value="自家用車">自家用車
+　　<input type="radio" name="test" value="公共交通機関">公共交通機関
+
+　</div>
+</form>　　　　　　　　　　　　　　　　　　　　　　　<!--ここまで交通手段選択場所-->
+<center>どうする？</center>
+<form name="when come here">　　　　　　　　　　　　　　　　<!--ここでなんかやる-->
+　<div class="radio-wrapp">
+　　<input type="radio" name="testt" value="First">1
+　　<input type="radio" name="testt" value="Second">2
+    <input type="radio" name="testt" value="Third">3
+    <input type="radio" name="testt" value="Fourth">4
+    <br>
+    <center><input type="button" value="経路作成！！" onClick="check();"></center>
+　</div>
+</form>　　　　　　　　　　　　　　　　　　　　　　　<!--ここまででなんかやる-->
+
+<br>
+
+ <style>
+#F{
+    display: none;
+}
+.F{
+    display: inline-block;
+    background: #b6beff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.G{
+    background: #ffaf74;
+    height: 500px;
+}
+#F:checked+label+.G{
+    display: none;
+}
+</style>                                   
+<input type="checkbox" id="F">
+<label class="F" for="F">この経路で行こう！</label>
+<div class="G">
+ここに時刻等々表示<br>
+↓<br>
+こんな感じに<br>
+↓<br>
+表示させたい<br>
+↓<br>
+けどムズイ<br>
+</div>　　　　　　　　
+</body>
+</html>
