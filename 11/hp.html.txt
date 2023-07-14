@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+
+ <head>
+  <title>
+   和歌山観光案内18
+   </title>
+ </head>
+<head>
+<a href=""class="banner"><p><span>和歌山観光案内</span></p></a>
+<style>
+.banner {
+        display: block;
+        position: relative;
+        padding-top: 200px;
+        margin: 0px auto;
+        width: 800px;
+        border-radius: 20px;
+        background-image: url(金剛峯寺2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+}
+.banner:hover {
+        color: #fff;
+        text-decoration: none;
+}
+.banner::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.4);
+        content: "";
+}
+.banner:hover::before {
+        background-color: rgba(0, 0, 0, 0);
+}
+.banner > p {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: -2px -2px 6px #333, 2px -2px 6px #333, 2px 2px 6px #333, -2px 2px 6px #333;
+        white-space: nowrap;
+}
+.banner > p > span {
+        display: block;
+}
+.banner > p > span:nth-of-type(1){
+        font-size: 30px;
+}
+
+</style>
+</head>
+
+    <head>
+       <style>
+        .resizeimage a img{
+            border-radius: 10px;
+        }
+        .resizeimage a img{
+            width: 100%;
+        }
+
+        .resizeimage{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+        }
+        a:hover{ 
+            opacity:0.5;
+            transition:0.3s;
+        }
+        </style>
+    </head>
+
+ <body>
+
+  <body>
+    <div style="margin-top : 10px;background-color : #0094ff"><font size="6" color="white"><center>現在地付近の観光地</center></font></div>
+    <div class="resizeimage">
+        <p><a href="#"><img src="観光地.jpg" alt="観光地"/></a></p>
+        <p><a href="#"><img src="観光地.jpg" alt="観光地"/></a></p>
+        <p><a href="#"><img src="観光地.jpg" alt="観光地"/></a></p>
+    </div>
+    <div style="margin-top : 10px;background-color : #0094ff"><font size="6" color="white"><center>人気の観光地</center></font></div>
+    <div class="resizeimage">
+        <p><a href="#"><img src="観光地.jpg" alt="観光地"/></a></p>
+        <p><a href="#"><img src="観光地.jpg" alt="観光地"/></a></p>
+        <p><a href="#"><img src="観光地.jpg" alt="観光地"/></a></p>
+    </div>
+    <div class="resizeimage">
+        <p><a href="#"><img src="観光地.jpg" alt="観光地"/></a></p>
+        <p><a href="#"><img src="観光地.jpg" alt="観光地"/></a></p>
+        <p><a href="#"><img src="観光地.jpg" alt="観光地"/></a></p>
+    </div>
+
+　<div style="background-color : #AAEEDD"><font size="5"><center>○○代におすすめ</center></font></div>
+  <head>
+    <style>
+    .t  { width: 100%; }
+  </style>
+ </head>
+
+<table class="t">
+ <tr>
+  <td width="33%" style="background-color : #AAEEDD"><font size="5"><center>10代</center></font></td>
+  <td width="34%"style="background-color : #AAEEDD"><font size="5"><center>20代</center></font></td>
+  <td width="33%"style="background-color : #AAEEDD"><font size="5"><center>30代</center></font></td>
+ </tr>
+ <tr>
+  <td width="33%"style="background-color : #AAEEDD"><font size="5"><center>40代</center></font></td>
+  <td width="34%"style="background-color : #AAEEDD"><font size="5"><center>50代</center></font></td>
+  <td width="33%"style="background-color : #AAEEDD"><font size="5"><center>60代～</center></font></td>
+ </tr>
+</table>
+ <br>
+
+ <head>
+ <style>
+.txt{
+    width: 50%;
+}
+</style>
+ </head>
+ <center><input type="text" name="gochiusa" class="txt">
+ <input type="button" value="検索" >
+ </center>
+
+<a href="" class="btn_03">今すぐ行く！</a>
+<style>           
+a.btn_03 {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 120px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #27acd9;
+	color: #27acd9;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+a.btn_03:hover {
+	color: #fff;
+	background: #27acd9;
+}
+</style>
+
+ </body>
+<p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</html>
