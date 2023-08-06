@@ -1,0 +1,9 @@
+.gradient { 
+	background:radial-gradient(#ffff7a, #7affff); 
+	height: 700px;
+}
+
+.gradient2 {
+	background: radial-gradient(#ffcfaa, #ffaacf);
+	height: 700px;
+}

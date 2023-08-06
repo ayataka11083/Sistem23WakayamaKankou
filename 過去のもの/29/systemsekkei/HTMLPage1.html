@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>おすすめの予定表</title>
+    <link rel="stylesheet" href="TextFile2.css">
+    
+</head>
+
+<body class="gradient">
+
+    <!--<div class="text">-->                <!--スライドアニメーション-->
+    <!--<h1 class="title">-->
+    <!--<span>おすすめの予定表</span>-->
+    <!--</h1>-->
+    <!--<p class="sentence">-->
+    <!--<span>！あなたにあった旅の経路を作成！</span>-->
+    <!--</p>-->
+    <!--</div>-->
+    <!--</style>-->
+    <center><h1><b>おすすめの予定表</b></h1></center>
+    <center>！あなたにあった旅の経路を作成！</center>
+
+    <center><h2>行きたい観光地</h2></center>
+
+    <center><table border="1" cellpadding="10"></center> <!--ここは観光場所入力するところ-->
+    <tr>
+        <td><label><input type="text" id="place1"></label></td>
+    </tr>
+    <tr>
+        <td><label><input type="text" id="place2"></label></td>
+    </tr>
+    <tr>
+        <td><label><input type="text" id="place3"></label></td>
+    </tr>
+    <tr>
+        <td><label><input type="text" id="place4"></label></td>
+    </tr>
+    <tr>
+        <td><label><input type="text" id="place5"></label></td>
+    </tr>
+    </table>　　　　　　　　　　　　　　　　　　　　　　<!--ここまで観光場所入力-->
+
+
+
+    <center>移動手段は？</center>
+    <form name="howtogo">
+        <!--ここは交通手段選択場所-->
+        <div class="radio-wrap">
+            <input type="radio" name="test" value="自家用車">自家用車
+            <input type="radio" name="test" value="公共交通機関">公共交通機関
+
+        </div>
+    </form>　　　　　　　　　　<!--ここまで交通手段選択場所-->
+
+
+    <center>どうする？</center>
+    <form name="when come here">
+        <!--ここでなんかやる-->
+        <div class="radio-wrapp">
+            <input type="radio" name="testt" value="First">1
+            <input type="radio" name="testt" value="Second">2
+            <input type="radio" name="testt" value="Third">3
+            <input type="radio" name="testt" value="Fourth">4
+            <br>
+            <center><button type="button" onclick="functionNum(1)">1のボタン</button></center>
+        </div>
+    </form>　　　　　　　　　　　　　　　　　　　　　　　<!--ここまででなんかやる-->
+
+
+
+    <br>
+    <input type="button" value="経路作成" id="checkButton">
+
+    <p id="msg"></p>
+
+    <script>
+
+        function butotnClick() {
+            msg.innerText = place1.value;
+            msg.innerText = place2.value;
+            msg.innerText = place3.value;
+            msg.innerText = place4.value;
+            msg.innerText = place5.value;
+        }
+
+        let place1 = document.getElementById('place1');
+        place1.value = '名前';
+        let msg = document.getElementById('msg');
+
+        let place2 = document.getElementById('place2');
+        place2.value = '名前';
+        let msg = document.getElementById('msg');
+
+        let place3 = document.getElementById('place3');
+        place3.value = '名前';
+        let msg = document.getElementById('msg');
+
+        let place4 = document.getElementById('place4');
+        place4.value = '名前';
+        let msg = document.getElementById('msg');
+
+        let place5 = document.getElementById('place5');
+        place5.value = '名前';
+        let msg = document.getElementById('msg');
+
+
+        let checkButton = document.getElementById('checkButton');
+        checkButton.addEventListener('click', butotnClick);
+    </script>
+</body>
+</html>

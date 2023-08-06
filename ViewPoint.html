@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+          "http://www.w3.org/TR/html4/strict.dtd">
+<head>
+    <title>
+        和歌山観光案内
+    </title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Header Sample</title>
+    <link rel="stylesheet" href="TextFile2.css">
+    <script type="text/javascript" src="APIkey/apikey.js"></script>
+    <script src="WakayamaKankoFunction3.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title2"></h1>
+        <a class="title" href="./index.html"><img src="20210124_1_mikan_01.png"></a>
+        <nav class="nav">
+            <ul class="menu-group">
+                <li class="menu-item"><a href="./ViewPoint.html">オススメの観光地診断</a></li>
+                <li class="menu-item"><a href="./RecommendedPlan.html">オススメ予定表</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        .title img {
+            height: 100px;
+            margin: auto;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color: #fff;
+            align-items: center;
+            opacity: 0.8;
+            position: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-item {
+            list-style: none;
+            display: inline-block;
+            color: #212529;
+        }
+    </style>
+</body>
+
+
+
+<body class="gradient2">
+
+    <br><br>
+
+    <center><h1><b>オススメの観光地</b></h1></center>
+    <center><h2>！あなたにピッタリの観光地を提供！</h2></center>
+
+    <center>観光地のジャンルを教えてください！</center>
+    <div class="radio-wrapp">
+        <center>
+            <input type="radio" name="A" value="A-A">遊園地
+            <input type="radio" name="A" value="A-B">自然
+            <input type="radio" name="A" value="A-C">建造物
+            <br>
+        </center>
+    </div>
+
+    <br>
+
+    <center>あなたの年齢を教えてください！</center>
+    <div class="radio-wrapp">
+        <center>
+            <input type="radio" name="B" value="B-A">10代
+            <input type="radio" name="B" value="B-B">20代
+            <input type="radio" name="B" value="B-C">30代
+            <input type="radio" name="B" value="B-D">40代
+            <input type="radio" name="B" value="B-E">50代
+            <input type="radio" name="B" value="B-F">60代以上
+            <br>
+        </center>
+    </div>
+
+    <br>
+
+    <center>誰と行くか教えてください！</center>
+    <div class="radio-wrapp">
+        <center>
+            <input type="radio" name="C" value="C-A">子ども
+            <input type="radio" name="C" value="C-B">親
+            <input type="radio" name="C" value="C-C">カップル
+            <input type="radio" name="C" value="C-D">友人
+            <input type="radio" name="C" value="C-E">ひとり
+            <br>
+        </center>
+    </div>
+
+    <br>
+
+    <center><button type="button" onclick="main()">検索！</button></center>
+
+    <div id="map"></div>
+    <p id=spotname0></p><div id="photo0"></div><div id="review0"></div>
+    <p id=spotname1></p><div id="photo1"></div><div id="review1"></div>
+    <p id=spotname2></p><div id="photo2"></div><div id="review2"></div>
+    <p id=spotname3></p><div id="photo3"></div><div id="review3"></div>
+    <p id=spotname4></p><div id="photo4"></div><div id="review4"></div>
+    <p id=spotname5></p><div id="photo5"></div><div id="review5"></div>
+
+
+
+
+</body>
