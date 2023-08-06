@@ -44,6 +44,19 @@
             display: inline-block;
             color: #212529;
         }
+
+        .labelA {
+            width: 200px;
+        }
+
+        .labelB {
+            width: 55px;
+        }
+
+        .labelC {
+            width: 20px;
+        }
+
     </style>
 </body>
 
@@ -72,32 +85,32 @@
     <tr>
         <td></td>
         <td>地点名</td>
-        <td>滞在時間(時間)</td>
+        <td>滞在時間<br>(時間)</td>
     </tr>
     <tr>
         <td>出発地</td>
-        <td><label><input type="text" id="origin"></label></td>
+        <td><label><input type="text" id="origin" class="labelA"></label></td>
         <td></td>
     </tr>
     <tr>
         <td>目的地１</td>
-        <td><label><input type="text" id="destination1"></label></td>
-        <td><label><input type="text" id="StayTime1"></label></td>
+        <td><label><input type="text" id="destination1" class="labelA"></label></td>
+        <td><label><input type="text" id="StayTime1" class="labelB"></label></td>
     </tr>
     <tr>
         <td>目的地２</td>
-        <td><label><input type="text" id="destination2"></label></td>
-        <td><label><input type="text" id="StayTime2"></label></td>
+        <td><label><input type="text" id="destination2" class="labelA"></label></td>
+        <td><label><input type="text" id="StayTime2" class="labelB"></label></td>
     </tr>
     <tr>
         <td>目的地３</td>
-        <td><label><input type="text" id="destination3"></label></td>
-        <td><label><input type="text" id="StayTime3"></label></td>
+        <td><label><input type="text" id="destination3" class="labelA"></label></td>
+        <td><label><input type="text" id="StayTime3" class="labelB"></label></td>
     </tr>
     <tr>
         <td>目的地４</td>
-        <td><label><input type="text" id="destination4"></label></td>
-        <td><label><input type="text" id="StayTime4"></label></td>
+        <td><label><input type="text" id="destination4" class="labelA"></label></td>
+        <td><label><input type="text" id="StayTime4" class="labelB"></label></td>
     </tr>
     </table>　　　　　　　　　　　　　　　　　　　　　　<!--ここまで観光場所入力-->
 
@@ -112,6 +125,15 @@
 
         </div>
     </form>　　　　　　　　　　<!--ここまで交通手段選択場所-->
+
+
+    <center>出発時間は？</center>
+    <label><input type="text" id="StartHour" class="labelC"></label>
+    時
+    <label><input type="text" id="StartMinute" class="labelC"></label>
+    分
+
+
     <!--<center>どうする？</center>
     <form name="when come here">-->
     <!--ここでなんかやる-->
@@ -283,12 +305,13 @@
 
         }
 
-
+        var NowTime = [0, 0, 0];
 
         async function TimeDisp(time1, time2, time3, time4, timeL) {
             var durationContainer = document.getElementById('duration');
 
-            var NowTime = [9, 0, 0];
+
+            
             console.log(time1, time2, time3, time4, timeL);
             durationContainer.innerHTML = ('00' + NowTime[0]).slice(-2) + ':' + ('00' + NowTime[1]).slice(-2) + '：' + document.getElementById('origin').value + '出発<br>';
             NowTime = CheckHotel(NowTime, time1, 1);
@@ -349,7 +372,7 @@
             var timeL = -1;
 
             await loadMapsAPI();
-
+            NowTime = await TimeAdd(NowTime, StartHour.value * 3600 + StartMinute.value * 60);
             time1 = await calculateTime(document.getElementById('origin').value, document.getElementById('destination1').value);
 
             if (destination2.value == '') {
