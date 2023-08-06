@@ -3,7 +3,7 @@ function loadMapsAPI() {
     return new Promise((resolve, reject) => {
       if (typeof google == 'undefined') {
           var script = document.createElement('script');
-        script.src = "http://maps.google.com/maps/api/js?key=" + config.apikey + "&libraries=places";
+        script.src = "https://maps.google.com/maps/api/js?key=" + config.apikey + "&libraries=places";
         script.onload = resolve;
         script.onerror = reject;
         document.head.appendChild(script);
