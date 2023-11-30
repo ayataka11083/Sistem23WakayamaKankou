@@ -24,8 +24,10 @@
     </header>
     <style>
         .title img {
-            height: 100px;
-            margin: auto;
+            height: 80px;
+            position: relative;
+            top: 5px;
+            left: 5px;
         }
 
         header {
@@ -45,70 +47,177 @@
             display: inline-block;
             color: #212529;
         }
+
+
+        h3 {
+            background-color: #ff90d1; /* セクションタイトルの背景色 */
+            color: #4d0040;
+            margin: 20px auto;
+            padding: 20px;
+            width: 40%;
+            font-size: 24px;
+            border-radius: 5px; /* 角丸効果 */
+        }
+
+        h4 {
+            background-color: #ff90d1; /* セクションタイトルの背景色 */
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            font-size: 24px;
+            border-radius: 5px; /* 角丸効果 */
+            text-align: left;
+        }
+
+
+
+        body.gradient2 {
+            background: pink; /* 画像に合わせた背景色 */
+            font-family: Arial, sans-serif; /* フォントを設定 */
+            color: white; /* テキストの色を設定 */
+            text-align: center; /* すべてのテキストを中央揃え */
+        }
+
+        h1 {
+            color: #4d0040; /* タイトルの色 */
+            text-align: center;
+        }
+
+        .subtitle {
+            display: block; /* ブロックレベル要素として扱う */
+            margin: 20px auto; /* 上下のマージンと、左右のマージンを自動に設定して中央に配置 */
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #5A3072;
+            background-color: #F6EAF6;
+            padding: 10px 20px; /* 内側の余白 */
+            max-width: 60%; /* 最大幅を60%に設定 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .radio-wrapp {
+            background-color: #ff69b4; /* ラジオボタンの背景色 */
+            border-radius: 10px; /* 角を丸める */
+            display: inline-block; /* インラインブロック要素として表示 */
+            margin: 10px auto; /* マージンを設定 */
+            padding: 10px; /* パディングを設定 */
+        }
+
+        button {
+            background-color: #ff1493; /* ボタンの背景色 */
+            color: white; /* ボタンのテキスト色 */
+            border: none; /* ボーダーをなしに */
+            padding: 10px 20px; /* パディングを設定 */
+            margin-top: 20px; /* 上のマージンを設定 */
+            border-radius: 5px; /* 角を丸める */
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* ソフトな影を追加 */
+            cursor: pointer; /* カーソルをポインターに */
+            font-size: 1em; /* フォントサイズを設定 */
+        }
+
+        button:hover {
+            background-color: #ff82ab; /* ホバー時の背景色を変更 */
+        }
+
+
+
+        #search-results {
+            display: none; /* 初期状態では非表示 */
+        }
+        .result {
+            margin: 20px auto;
+            padding: 20px;
+            color: #000000;
+            text-align: left;
+            width: 80%;
+            /* レスポンシブデザインに適するように幅を調整 */
+            background-color: #f9f9f9; /* 背景色を薄い色に */
+            border-radius: 10px; /* 角を丸める */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06); /* ソフトな影を追加 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* モダンなフォント */
+            line-height: 1.6; /* 行間を広げる */
+        }
+
+            /* 時間を強調するためのスタイル */
+            .result time {
+                font-size: 1.2em; /* 時間のフォントサイズを大きく */
+                font-weight: bold; /* フォントを太くする */
+                color: #4CAF50; /* 時間の色を緑色に */
+                margin-right: 10px; /* 時間とテキストの間隔をとる */
+            }
+
+            /* 各結果のブロック */
+            .result div {
+                margin-bottom: 10px; /* 各結果の間に余白を設定 */
+                padding: 10px; /* パディングを追加 */
+                border-left: 4px solid #4CAF50; /* 左側にアクセントのボーダー */
+            }
+
+                /* 最後の要素の下マージンを削除 */
+                .result div:last-child {
+                    margin-bottom: 0;
+                }
+
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            .result {
+                width: 95%; /* モバイルデバイスに適した幅 */
+            }
+        }
+
     </style>
 </body>
 
 
 
 <body class="gradient2">
-
     <br><br>
+    <h1>オススメの観光地</h1>
+    <p class="subtitle">あなたにピッタリの観光地を提供！</p>
 
-    <center><h1><b>オススメの観光地</b></h1></center>
-    <center><h2>！あなたにピッタリの観光地を提供！</h2></center>
-
-    <center>観光地のジャンルを教えてください！</center>
+    <h3>観光地のジャンルを教えてください！</h3>
     <div class="radio-wrapp">
-        <center>
-            <input type="radio" name="A" value="A-A">遊園地
-            <input type="radio" name="A" value="A-B">自然
-            <input type="radio" name="A" value="A-C">建造物
-            <br>
-        </center>
+        <input type="radio" name="A" value="A-A">遊園地
+        <input type="radio" name="A" value="A-B">自然
+        <input type="radio" name="A" value="A-C">建造物
     </div>
 
-    <br>
-
-    <center>あなたの年齢を教えてください！</center>
+    <h3>あなたの年齢を教えてください！</h3>
     <div class="radio-wrapp">
-        <center>
-            <input type="radio" name="B" value="B-A">10代
-            <input type="radio" name="B" value="B-B">20代
-            <input type="radio" name="B" value="B-C">30代
-            <input type="radio" name="B" value="B-D">40代
-            <input type="radio" name="B" value="B-E">50代
-            <input type="radio" name="B" value="B-F">60代以上
-            <br>
-        </center>
+        <input type="radio" name="B" value="B-A">10代
+        <input type="radio" name="B" value="B-B">20代
+        <input type="radio" name="B" value="B-C">30代
+        <input type="radio" name="B" value="B-D">40代
+        <input type="radio" name="B" value="B-E">50代
+        <input type="radio" name="B" value="B-F">60代以上
     </div>
 
-    <br>
-
-    <center>誰と行くか教えてください！</center>
+    <h3>誰と行くか教えてください！</h3>
     <div class="radio-wrapp">
-        <center>
-            <input type="radio" name="C" value="C-A">子ども
-            <input type="radio" name="C" value="C-B">親
-            <input type="radio" name="C" value="C-C">カップル
-            <input type="radio" name="C" value="C-D">友人
-            <input type="radio" name="C" value="C-E">ひとり
-            <br>
-        </center>
+        <input type="radio" name="C" value="C-A">子ども
+        <input type="radio" name="C" value="C-B">親
+        <input type="radio" name="C" value="C-C">カップル
+        <input type="radio" name="C" value="C-D">友人
+        <input type="radio" name="C" value="C-E">ひとり
     </div>
-
     <br>
-
-    <center><button type="button" onclick="main()">検索！</button></center>
+    <button type="button" onclick="main(); document.getElementById('search-results').style.display = 'block';">検索！</button>
 
     <div id="map"></div>
-    <p id=spotname0></p><div id="photo0"></div><div id="review0"></div>
-    <p id=spotname1></p><div id="photo1"></div><div id="review1"></div>
-    <p id=spotname2></p><div id="photo2"></div><div id="review2"></div>
-    <p id=spotname3></p><div id="photo3"></div><div id="review3"></div>
-    <p id=spotname4></p><div id="photo4"></div><div id="review4"></div>
-    <p id=spotname5></p><div id="photo5"></div><div id="review5"></div>
 
-
-
+    <div id="search-results">
+        <h4>検索結果</h4>
+        <div class="result">
+            <p id=spotname0></p><div id="photo0"></div><div id="review0"></div>
+            <p id=spotname1></p><div id="photo1"></div><div id="review1"></div>
+            <p id=spotname2></p><div id="photo2"></div><div id="review2"></div>
+            <p id=spotname3></p><div id="photo3"></div><div id="review3"></div>
+            <p id=spotname4></p><div id="photo4"></div><div id="review4"></div>
+            <p id=spotname5></p><div id="photo5"></div><div id="review5"></div>
+        </div>
+    </div>
 
 </body>

@@ -45,11 +45,14 @@ async function getPlaceReviews(placeId) {
         });
     });
 }
+
+function showResults() {
+    document.getElementById('result').style.display = 'block'; // または 'flex' や 'grid' など、レイアウトに適した値にします
+}
+
 // ���C���֐�
 async function main() {
     i = 0;
-
-
 
 
     let elementsA = document.getElementsByName('A');
@@ -147,7 +150,7 @@ async function main() {
     
     if (!userInput) return;
     try {
-        //i = 0;
+        var i = 0;
         const touristSpots = await searchTouristSpots(userInput);
         const selectedSpots = touristSpots.slice(0, 10);
         for (const spot of selectedSpots) {
@@ -162,7 +165,7 @@ async function main() {
                 center: { lat: -34.397, lng: 150.644 },
                 zoom: 8
             });
-            await getPlacePhoto(map, spot.place_id);
+            await getPlacePhoto(map, spot.place_id,i);
 
 if(i==0){
     var b = 0;
@@ -250,9 +253,8 @@ i++;
     
 }
 
-var i = 0;
 
-function getPlacePhoto(map, placeId) {
+function getPlacePhoto(map, placeId,i) {
     let service = new google.maps.places.PlacesService(map);
 
     

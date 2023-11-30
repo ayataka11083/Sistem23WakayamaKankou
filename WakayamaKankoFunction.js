@@ -47,7 +47,9 @@ async function getPlaceReviews(placeId) {
 }
 // ���C���֐�
 async function main() {
+
     let userInput = document.getElementById('userinput').value;
+    document.getElementById("SearchForm").reset();
     
     if (!userInput) return;
     try {
@@ -66,13 +68,13 @@ async function main() {
                 center: { lat: -34.397, lng: 150.644 },
                 zoom: 8
             });
-            await getPlacePhoto(map, spot.place_id);
+            await getPlacePhoto(map, spot.place_id,i);
 
 if(i==0){
     var b = 0;
             selectedReviews.forEach(review => {
                 console.log('  -', review.text);
-                var reviewElement=document.getElementById("review0");
+                var reviewElement = document.getElementById("review0");
                 if(b==0){
                     document.getElementById("spotname0").innerHTML='観光地：'+spot.name;
                     reviewElement.innerHTML='口コミ：'+review.text;
@@ -150,16 +152,16 @@ i++;
 }    
     } catch (error) {
         console.error('エラーが発生しました:', error.message);
+        document.getElementById("SearchForm").reset();
     }
     
 }
 // �v���O���������s
 main();
 
-var i = 0;
-function getPlacePhoto(map, placeId) {
-    let service = new google.maps.places.PlacesService(map);
 
+function getPlacePhoto(map, placeId,i) {
+    let service = new google.maps.places.PlacesService(map);
     switch (i) {
         case 0:
             service.getDetails({
