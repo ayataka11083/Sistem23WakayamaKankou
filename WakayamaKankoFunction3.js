@@ -46,9 +46,6 @@ async function getPlaceReviews(placeId) {
     });
 }
 
-function showResults() {
-    document.getElementById('result').style.display = 'block'; // または 'flex' や 'grid' など、レイアウトに適した値にします
-}
 
 // ���C���֐�
 async function main() {
